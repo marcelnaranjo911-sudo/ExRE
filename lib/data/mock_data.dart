@@ -1,0 +1,32 @@
+import 'package:flutter/material.dart';
+import '../models/resource.dart';
+
+const Color catFlutterColor = Color(0xFF027DFD);
+const Color catAndroidColor = Color(0xFF3DDC84);
+const Color catLayoutsColor = Color(0xFF9C27B0);
+const Color catScrollColor = Color(0xFFFF9800);
+const Color catSliversColor = Color(0xFFE91E63);
+const Color catNavColor = Color(0xFF00BCD4);
+
+final List<Resource> mockResources = [
+  const Resource(id: '1', title: 'Introducción a Widgets', category: ResourceCategory.flutter, author: 'Roilán R.', durationMinutes: 12, level: ResourceLevel.basico, description: 'Aprende los fundamentos de los widgets en Flutter: StatelessWidget, StatefulWidget y cómo se componen.', type: ResourceType.video, color: catFlutterColor),
+  const Resource(id: '2', title: 'Ciclo de vida en Android', category: ResourceCategory.android, author: 'Jorge Ruiz', durationMinutes: 10, level: ResourceLevel.basico, description: 'Entiende cómo interactúan los estados onResume, onPause, y onDestroy en una app.', type: ResourceType.lectura, color: catAndroidColor),
+  const Resource(id: '3', title: 'Layouts Adaptables con Flex', category: ResourceCategory.layouts, author: 'Ana Pérez', durationMinutes: 18, level: ResourceLevel.intermedio, description: 'Domina Row, Column y Expanded para crear interfaces fluidas en múltiples resoluciones.', type: ResourceType.video, color: catLayoutsColor),
+  const Resource(id: '4', title: 'ListView.builder a fondo', category: ResourceCategory.scrollables, author: 'Carlos Díaz', durationMinutes: 15, level: ResourceLevel.basico, description: 'Optimiza el rendimiento de tus listas grandes instanciando elementos bajo demanda.', type: ResourceType.practica, color: catScrollColor),
+  const Resource(id: '5', title: 'SliverAppBar paso a paso', category: ResourceCategory.slivers, author: 'María López', durationMinutes: 22, level: ResourceLevel.avanzado, description: 'Crea cabeceras colapsables y efectos de scroll complejos usando CustomScrollView.', type: ResourceType.documento, color: catSliversColor),
+  const Resource(id: '6', title: 'Navigator y rutas nombradas', category: ResourceCategory.navegacion, author: 'Elena Gómez', durationMinutes: 14, level: ResourceLevel.intermedio, description: 'Manejo del stack de navegación y paso de argumentos entre pantallas en Flutter.', type: ResourceType.lectura, color: catNavColor),
+  const Resource(id: '7', title: 'Gestión de Estado Nativa', category: ResourceCategory.flutter, author: 'Roilán R.', durationMinutes: 25, level: ResourceLevel.intermedio, description: 'Uso de InheritedWidget y ValueNotifier sin librerías externas.', type: ResourceType.video, color: catFlutterColor),
+  const Resource(id: '8', title: 'Permisos en Android', category: ResourceCategory.android, author: 'Jorge Ruiz', durationMinutes: 20, level: ResourceLevel.intermedio, description: 'Solicitud de permisos en tiempo de ejecución para Android 13+.', type: ResourceType.documento, color: catAndroidColor),
+  const Resource(id: '9', title: 'Stack y Positioned', category: ResourceCategory.layouts, author: 'Ana Pérez', durationMinutes: 10, level: ResourceLevel.basico, description: 'Superposición de elementos en la pantalla de forma absoluta.', type: ResourceType.practica, color: catLayoutsColor),
+  const Resource(id: '10', title: 'GridView y sus delegados', category: ResourceCategory.scrollables, author: 'Carlos Díaz', durationMinutes: 16, level: ResourceLevel.intermedio, description: 'Configurando mallas responsivas con SliverGridDelegate.', type: ResourceType.video, color: catScrollColor),
+  const Resource(id: '11', title: 'Efecto Parallax con Slivers', category: ResourceCategory.slivers, author: 'María López', durationMinutes: 30, level: ResourceLevel.avanzado, description: 'Implementación avanzada de scroll parallax.', type: ResourceType.practica, color: catSliversColor),
+  const Resource(id: '12', title: 'BottomNavigationBar UI', category: ResourceCategory.navegacion, author: 'Elena Gómez', durationMinutes: 12, level: ResourceLevel.basico, description: 'Construcción de un menú de navegación inferior persistente.', type: ResourceType.video, color: catNavColor),
+  const Resource(id: '13', title: 'Animaciones Implícitas', category: ResourceCategory.flutter, author: 'Luis Vega', durationMinutes: 18, level: ResourceLevel.basico, description: 'Uso de AnimatedContainer y AnimatedOpacity.', type: ResourceType.lectura, color: catFlutterColor),
+  const Resource(id: '14', title: 'Servicios en Segundo Plano', category: ResourceCategory.android, author: 'Jorge Ruiz', durationMinutes: 35, level: ResourceLevel.avanzado, description: 'Creación de Foreground Services en Android nativo.', type: ResourceType.documento, color: catAndroidColor),
+  const Resource(id: '15', title: 'Wrap y Flow', category: ResourceCategory.layouts, author: 'Ana Pérez', durationMinutes: 14, level: ResourceLevel.avanzado, description: 'Manejo avanzado del espacio restante y flujos dinámicos.', type: ResourceType.lectura, color: catLayoutsColor),
+  const Resource(id: '16', title: 'Paginación en ListView', category: ResourceCategory.scrollables, author: 'Carlos Díaz', durationMinutes: 25, level: ResourceLevel.intermedio, description: 'Carga infinita (Infinite Scroll) al llegar al final de la lista.', type: ResourceType.practica, color: catScrollColor),
+  const Resource(id: '17', title: 'SliverPersistentHeader', category: ResourceCategory.slivers, author: 'María López', durationMinutes: 20, level: ResourceLevel.intermedio, description: 'Encabezados fijos en medio de una vista scrolleable.', type: ResourceType.video, color: catSliversColor),
+  const Resource(id: '18', title: 'Deep Linking', category: ResourceCategory.navegacion, author: 'Elena Gómez', durationMinutes: 28, level: ResourceLevel.avanzado, description: 'Apertura de la app desde enlaces externos con rutas específicas.', type: ResourceType.documento, color: catNavColor),
+  const Resource(id: '19', title: 'Flutter DevTools', category: ResourceCategory.flutter, author: 'Luis Vega', durationMinutes: 15, level: ResourceLevel.intermedio, description: 'Inspeccionando el árbol de widgets y rendimiento.', type: ResourceType.video, color: catFlutterColor),
+  const Resource(id: '20', title: 'Material 3 Themes', category: ResourceCategory.layouts, author: 'Ana Pérez', durationMinutes: 22, level: ResourceLevel.basico, description: 'Implementación del nuevo sistema de diseño Material Design 3.', type: ResourceType.lectura, color: catLayoutsColor),
+];
